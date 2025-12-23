@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: #f5f6fa;
+}
+
+.app-header {
+  background: linear-gradient(135deg,#ff7a18,#ffb347);
+  padding: 20px;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+}
+
+.menu-grid {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+.food-card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+.stars span {
+  font-size: 22px;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.stars span:hover { color: gold; }
+
+.auth-card, .menu-card {
+  max-width: 420px;
+  margin: 60px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+}
+
+button {
+  background: #ff7a18;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.hidden { display: none; }
+.error { color: red; }
+.success { color: green; }
