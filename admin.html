@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mess Admin</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="loginView" class="auth-card">
+  <h2>Admin Login</h2>
+  <input id="email" type="email" placeholder="Admin Email">
+  <input id="password" type="password" placeholder="Password">
+  <button id="loginBtn">Login</button>
+  <p id="loginError" class="error"></p>
+</div>
+
+<div id="dashboardView" class="hidden">
+  <header class="admin-header">
+    <h2>Mess Menu Dashboard</h2>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <form id="menuForm" class="menu-card">
+    <select id="day">
+      <option value="monday">Monday</option>
+      <option value="tuesday">Tuesday</option>
+      <option value="wednesday">Wednesday</option>
+      <option value="thursday">Thursday</option>
+      <option value="friday">Friday</option>
+      <option value="saturday">Saturday</option>
+      <option value="sunday">Sunday</option>
+    </select>
+
+    <textarea id="breakfast" placeholder="Breakfast Menu"></textarea>
+    <textarea id="lunch" placeholder="Lunch Menu"></textarea>
+    <textarea id="dinner" placeholder="Dinner Menu"></textarea>
+
+    <button type="submit">Save Menu</button>
+    <p id="saveMsg"></p>
+  </form>
+</div>
+
+<script type="module" src="js/auth.js"></script>
+<script type="module" src="js/admin.js"></script>
+</body>
+</html>
